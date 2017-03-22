@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CAA-Nj-tNJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="hyd-AU-WSk">
+            <objects>
+                <viewController id="CAA-Nj-tNJ" customClass="LoginVC" customModule="Lettercheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieN-5U-R77"/>
+                        <viewControllerLayoutGuide type="bottom" id="aY2-6j-lFO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5JY-E2-iOM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="MA6-7Q-uRU">
+                                <rect key="frame" x="67" y="196.5" width="241" height="274"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3t-Ic-oHI" customClass="LCLTextField" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="241" id="1ut-i3-wHj"/>
+                                            <constraint firstAttribute="height" constant="30" id="4pd-qE-Mcu"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1S1-Jg-kca" customClass="LCLTextField" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="241" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="H2K-C4-Bft"/>
+                                            <constraint firstAttribute="width" constant="241" id="lbe-OV-ohx"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47U-BT-Thc" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="96" width="241" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Hh0-0J-8fa"/>
+                                            <constraint firstAttribute="width" constant="241" id="sou-cO-3D8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                        <state key="normal" title="Log in / Sign Up"/>
+                                        <connections>
+                                            <action selector="emailSignIn" destination="CAA-Nj-tNJ" eventType="touchUpInside" id="nCP-ZS-O3m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-Bb-e1O" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="194" width="241" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="241" id="BOe-kV-TUu"/>
+                                            <constraint firstAttribute="height" constant="80" id="I1i-Iz-HUT"/>
+                                        </constraints>
+                                        <state key="normal" title="Log in with Facebook"/>
+                                        <connections>
+                                            <action selector="fblogin" destination="CAA-Nj-tNJ" eventType="touchUpInside" id="pKe-v1-gJH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MA6-7Q-uRU" firstAttribute="centerX" secondItem="5JY-E2-iOM" secondAttribute="centerX" id="5TG-3I-OVT"/>
+                            <constraint firstItem="MA6-7Q-uRU" firstAttribute="centerY" secondItem="5JY-E2-iOM" secondAttribute="centerY" id="mMi-jT-MDQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="47U-BT-Thc" id="6jW-UP-axv"/>
+                        <outlet property="password" destination="1S1-Jg-kca" id="e1H-44-gs0"/>
+                        <outlet property="username" destination="S3t-Ic-oHI" id="idY-Tt-ShG"/>
+                        <segue destination="WWQ-AO-5Pn" kind="show" identifier="toMain" id="Ofd-XU-Bfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkO-th-psV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="2"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="KLi-d3-sws">
+            <objects>
+                <viewController id="WWQ-AO-5Pn" customClass="MainVC" customModule="Lettercheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNL-k9-YjN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aqx-Ak-e8i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exj-Zt-LZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvs-lQ-Ld8">
+                                <rect key="frame" x="67" y="38" width="240" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="C0M-d4-JV8"/>
+                                    <constraint firstAttribute="width" constant="240" id="fN7-wb-k4L"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="maz-Fc-Dde">
+                                <rect key="frame" x="67" y="166" width="240" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0L-8x-Gxs" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="EX3-jM-kT7"/>
+                                            <constraint firstAttribute="width" constant="240" id="T9H-k1-Bgb"/>
+                                            <constraint firstAttribute="height" constant="80" id="T9L-71-lsY"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="lZT-O8-ILR"/>
+                                        </constraints>
+                                        <state key="normal" title="Single player"/>
+                                        <connections>
+                                            <action selector="startSinglePlayerGame" destination="WWQ-AO-5Pn" eventType="touchUpInside" id="lwl-dF-kbG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pym-Sz-Uyg" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="8tw-Ji-qk9"/>
+                                            <constraint firstAttribute="height" constant="80" id="bT0-uJ-hz2"/>
+                                            <constraint firstAttribute="width" constant="240" id="f5r-5Y-YSy"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="xu1-mW-blW"/>
+                                        </constraints>
+                                        <state key="normal" title="Versus mode"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIC-eg-ebl" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="07Q-tz-V0V"/>
+                                            <constraint firstAttribute="height" constant="80" id="9c4-iA-Mgy"/>
+                                            <constraint firstAttribute="width" constant="240" id="YrA-jD-tOt"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="eht-eX-wFy"/>
+                                        </constraints>
+                                        <state key="normal" title="Highscore"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxK-Yp-N24" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="300" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1kp-Ha-oKy"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="1rx-nb-WB1"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="EHj-Id-eZz"/>
+                                            <constraint firstAttribute="width" constant="240" id="OG4-ZM-w82"/>
+                                        </constraints>
+                                        <state key="normal" title="Setup"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uvs-lQ-Ld8" firstAttribute="top" secondItem="QNL-k9-YjN" secondAttribute="bottom" constant="18" id="YAt-GX-eYR"/>
+                            <constraint firstItem="maz-Fc-Dde" firstAttribute="top" secondItem="uvs-lQ-Ld8" secondAttribute="bottom" constant="47" id="eng-PV-bIT"/>
+                            <constraint firstItem="maz-Fc-Dde" firstAttribute="centerX" secondItem="exj-Zt-LZr" secondAttribute="centerX" id="gYf-mu-2Tt"/>
+                            <constraint firstItem="uvs-lQ-Ld8" firstAttribute="centerX" secondItem="exj-Zt-LZr" secondAttribute="centerX" id="uZk-yb-uez"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="rOT-NQ-f5M" kind="show" identifier="toCategories" id="ebU-7H-7UD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVb-6s-xy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.60000000000002" y="0.44977511244377816"/>
+        </scene>
+        <!--CategoriesVC-->
+        <scene sceneID="ltg-T2-uiv">
+            <objects>
+                <viewController id="rOT-NQ-f5M" customClass="CategoriesVC" customModule="Lettercheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zae-mr-Yh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgJ-TV-9ic"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8eX-QX-ocb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b7m-a9-OXs">
+                                <rect key="frame" x="16" y="122" width="343" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Category" rowHeight="99" id="Cs6-iW-Iss" customClass="CategoriesTableViewCell" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="Cs6-iW-Iss" id="44c-Mp-zLg">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLY-2K-QwZ" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                                    <rect key="frame" x="51" y="9.5" width="240" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="X2U-0C-vxg"/>
+                                                        <constraint firstAttribute="height" constant="80" id="pGV-nW-ZQB"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Fetching data. Please wait."/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kLY-2K-QwZ" firstAttribute="centerY" secondItem="44c-Mp-zLg" secondAttribute="centerY" id="kFp-p0-Xcb"/>
+                                                <constraint firstItem="kLY-2K-QwZ" firstAttribute="centerX" secondItem="44c-Mp-zLg" secondAttribute="centerX" id="uch-lO-5bt"/>
+                                            </constraints>
+                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="button" destination="kLY-2K-QwZ" id="eS5-Nl-I9J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rOT-NQ-f5M" id="0jT-KP-gtp"/>
+                                    <outlet property="delegate" destination="rOT-NQ-f5M" id="gWS-gz-S14"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inc-tS-qxA">
+                                <rect key="frame" x="134" y="48" width="107" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="bLZ-wg-HSZ"/>
+                                    <constraint firstAttribute="height" constant="42" id="de9-zp-3FI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b7m-a9-OXs" firstAttribute="top" secondItem="inc-tS-qxA" secondAttribute="bottom" constant="32" id="CRQ-i9-AwH"/>
+                            <constraint firstItem="inc-tS-qxA" firstAttribute="top" secondItem="Zae-mr-Yh9" secondAttribute="bottom" constant="28" id="MZY-D0-7PK"/>
+                            <constraint firstItem="b7m-a9-OXs" firstAttribute="trailing" secondItem="8eX-QX-ocb" secondAttribute="trailingMargin" id="OuK-5g-dAr"/>
+                            <constraint firstItem="b7m-a9-OXs" firstAttribute="leading" secondItem="8eX-QX-ocb" secondAttribute="leadingMargin" id="adm-wP-6KP"/>
+                            <constraint firstItem="inc-tS-qxA" firstAttribute="centerX" secondItem="8eX-QX-ocb" secondAttribute="centerX" id="eXY-wp-ZBn"/>
+                            <constraint firstItem="JgJ-TV-9ic" firstAttribute="top" secondItem="b7m-a9-OXs" secondAttribute="bottom" constant="8" id="gmY-rv-2jy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categorieTable" destination="b7m-a9-OXs" id="RKx-EN-6iV"/>
+                        <segue destination="5c3-MY-9Gt" kind="show" identifier="startGame" id="KIL-1j-be0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKA-mm-wBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="1"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="cDU-u1-piZ">
+            <objects>
+                <viewController id="5c3-MY-9Gt" customClass="GameVC" customModule="Lettercheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lrf-15-gW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="r2I-mk-Ba2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k2d-Lu-pW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvf-Zv-HGN" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="808-Kr-v0d" customClass="SimpleLabel" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="49" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-9s-4LK">
+                                <rect key="frame" x="117.5" y="21" width="140" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z85-iO-IHh" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YFn-7r-WNA"/>
+                                            <constraint firstAttribute="width" constant="20" id="ye7-ai-Ncp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKC-ad-ULe" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="5aj-gJ-Uph"/>
+                                            <constraint firstAttribute="height" constant="20" id="gPj-Tk-Oe4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S89-Bu-2PS" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Vqj-By-LHx"/>
+                                            <constraint firstAttribute="height" constant="20" id="YdH-SO-bdK"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-Ut-4aK" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="SzQ-wT-x8i"/>
+                                            <constraint firstAttribute="width" constant="20" id="j3B-hs-SEX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gG4-Ts-vXr" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="MtM-iv-sUL"/>
+                                            <constraint firstAttribute="height" constant="20" id="ZsG-4V-Vz5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbN-FS-G3k" customClass="RedDot" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="QTq-6C-lxA"/>
+                                            <constraint firstAttribute="width" constant="20" id="hsf-kZ-ote"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujc-Vv-O4T" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="317" y="20" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7O-Qm-sBS" customClass="SimpleLabel" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="317" y="49" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D5P-sH-8Pg">
+                                <rect key="frame" x="41" y="166" width="293" height="128"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D5c-hf-GN5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="Qpu-3y-4vR">
+                                    <size key="itemSize" width="35" height="35"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="letterCell" id="OzD-Y3-WwM" customClass="LetterCell" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-Td-g5u">
+                                                    <rect key="frame" x="13.5" y="7" width="8" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.31764705879999999" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="bVk-Td-g5u" firstAttribute="centerX" secondItem="OzD-Y3-WwM" secondAttribute="centerX" id="Jwb-wc-e2N"/>
+                                            <constraint firstItem="bVk-Td-g5u" firstAttribute="centerY" secondItem="OzD-Y3-WwM" secondAttribute="centerY" id="lvO-zs-muY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="bVk-Td-g5u" id="7mG-Db-FZI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzj-rZ-Lsz" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="161.5" y="116" width="52" height="30"/>
+                                <state key="normal" title="Give up"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-Hp-lb0">
+                                <rect key="frame" x="2" y="447.5" width="372" height="116"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kP0-68-M1t">
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syW-IF-re2" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="58L-bB-4zs"/>
+                                                    <constraint firstAttribute="height" constant="30" id="fei-Rc-Xn0"/>
+                                                </constraints>
+                                                <state key="normal" title="Q"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="fq6-aU-zyz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-c4-Uwa" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="BjS-0a-Hr6"/>
+                                                    <constraint firstAttribute="width" constant="30" id="aAN-hQ-etX"/>
+                                                </constraints>
+                                                <state key="normal" title="W"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="gye-Mj-Pfg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaS-aI-Xlm" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="1rh-w4-FlA"/>
+                                                    <constraint firstAttribute="height" constant="30" id="DGe-Po-9Sb"/>
+                                                </constraints>
+                                                <state key="normal" title="E"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="wLw-32-kRE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-mY-Cif" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="114" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="gWq-b8-YzW"/>
+                                                    <constraint firstAttribute="width" constant="30" id="rTN-gD-bac"/>
+                                                </constraints>
+                                                <state key="normal" title="R"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="ZWy-am-tCz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-0c-x6w" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Irl-JO-F9x"/>
+                                                    <constraint firstAttribute="height" constant="30" id="WDn-oD-u7n"/>
+                                                </constraints>
+                                                <state key="normal" title="T"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="Lew-Lt-kcS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-Kg-Iqh" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="QCY-Tp-9Jl"/>
+                                                    <constraint firstAttribute="height" constant="30" id="wsG-HT-edc"/>
+                                                </constraints>
+                                                <state key="normal" title="Y"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="Ada-Kf-C3c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PM-lf-4hc" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="228" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ia0-Uh-UdB"/>
+                                                    <constraint firstAttribute="width" constant="30" id="lYp-3v-dbQ"/>
+                                                </constraints>
+                                                <state key="normal" title="U"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="VkM-9E-ZSA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-Gl-jYQ" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="266" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Kxp-N2-KlO"/>
+                                                    <constraint firstAttribute="width" constant="30" id="hRv-Qi-kAw"/>
+                                                </constraints>
+                                                <state key="normal" title="I"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="3c5-OA-Uli"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmv-9c-eLL" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="304" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="5sw-nx-bOD"/>
+                                                    <constraint firstAttribute="height" constant="30" id="IDa-yK-7uB"/>
+                                                </constraints>
+                                                <state key="normal" title="O"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="RKN-jU-YeV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYZ-02-C0z" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="342" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="cCH-f7-Yk0"/>
+                                                    <constraint firstAttribute="width" constant="30" id="wqv-QA-i4e"/>
+                                                </constraints>
+                                                <state key="normal" title="P"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="O7U-jS-Noh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kDy-TZ-GEb">
+                                        <rect key="frame" x="19" y="43" width="334" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8T-hr-SbH" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="MDa-sS-Q2M"/>
+                                                    <constraint firstAttribute="width" constant="30" id="h7c-3T-VPm"/>
+                                                </constraints>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="pq3-YZ-3KR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-YL-f2H" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Aqa-Kq-yoK"/>
+                                                    <constraint firstAttribute="width" constant="30" id="jTH-Ed-rmz"/>
+                                                </constraints>
+                                                <state key="normal" title="S"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="NKB-uH-WAm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqg-R5-bmJ" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="07p-Nu-LSH"/>
+                                                    <constraint firstAttribute="width" constant="30" id="CR4-E4-aKW"/>
+                                                </constraints>
+                                                <state key="normal" title="D"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="Mxr-as-bz7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH3-9s-irk" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="114" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="G3T-tk-UtE"/>
+                                                    <constraint firstAttribute="width" constant="30" id="uFg-YI-B2U"/>
+                                                </constraints>
+                                                <state key="normal" title="F"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="itA-sh-dvd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8J-Qg-ejw" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="HWy-YA-b1h"/>
+                                                    <constraint firstAttribute="width" constant="30" id="oBN-aF-avr"/>
+                                                </constraints>
+                                                <state key="normal" title="G"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="nCE-9h-6BI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ2-sz-gSr" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="FEF-mA-gMC"/>
+                                                    <constraint firstAttribute="height" constant="30" id="hI4-GR-G3w"/>
+                                                </constraints>
+                                                <state key="normal" title="H"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="qg8-AO-wes"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpO-Bf-Nq6" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="228" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="2bY-Nn-MWb"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ulE-Pg-Vje"/>
+                                                </constraints>
+                                                <state key="normal" title="J"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="Y5S-lo-Jtp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-Vj-vO9" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="266" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="dOj-6T-i2t"/>
+                                                    <constraint firstAttribute="height" constant="30" id="knf-KX-vy8"/>
+                                                </constraints>
+                                                <state key="normal" title="K"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="UNT-di-8en"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-0Q-NVs" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="304" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Ijo-Ae-5u5"/>
+                                                    <constraint firstAttribute="height" constant="30" id="UaX-4v-5nb"/>
+                                                </constraints>
+                                                <state key="normal" title="L"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="jfk-BN-qmW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="awE-cw-Fss">
+                                        <rect key="frame" x="57" y="86" width="258" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiM-ZS-hKr" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="gkn-NK-CVL"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ssk-O3-9bu"/>
+                                                </constraints>
+                                                <state key="normal" title="Z"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="YrJ-Ly-HNf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYi-Zg-Qn7" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="7wu-vj-Ew9"/>
+                                                    <constraint firstAttribute="width" constant="30" id="dBv-hI-x0X"/>
+                                                </constraints>
+                                                <state key="normal" title="X"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="WfL-Xb-ekc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT1-Hu-0hf" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="cRy-wi-JoU"/>
+                                                    <constraint firstAttribute="height" constant="30" id="rgc-aU-s8c"/>
+                                                </constraints>
+                                                <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="f4v-PH-cwh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COj-ae-MMs" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="114" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="9YL-oO-Y0a"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sX1-nz-uqM"/>
+                                                </constraints>
+                                                <state key="normal" title="V"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="nK1-ka-bmI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lB-g9-T6v" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="jrI-MG-f70"/>
+                                                    <constraint firstAttribute="height" constant="30" id="uk3-3U-Xm5"/>
+                                                </constraints>
+                                                <state key="normal" title="B"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="yUf-mL-sEU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4A-mn-AfK" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="H5H-Ra-el4"/>
+                                                    <constraint firstAttribute="height" constant="30" id="KIz-EU-3EA"/>
+                                                </constraints>
+                                                <state key="normal" title="N"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="yIz-F0-sO1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1E-EV-Vbr" customClass="LetterButton" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="228" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="CHW-7A-jgK"/>
+                                                    <constraint firstAttribute="width" constant="30" id="eRv-iE-JQf"/>
+                                                </constraints>
+                                                <state key="normal" title="M"/>
+                                                <connections>
+                                                    <action selector="checkLetterWithSender:" destination="5c3-MY-9Gt" eventType="touchUpInside" id="AI9-Fq-gB8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eGj-7h-QhY">
+                                <rect key="frame" x="127.5" y="617" width="120" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-D5-VTr" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="#1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wee-TJ-dd2" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="#2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-VM-AUd" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="#3"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hints" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zF-8a-wOS">
+                                <rect key="frame" x="167.5" y="588.5" width="40" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vq-rl-Jnb" customClass="SimpleLabel" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="147" y="49" width="80" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mfx-c2-183"/>
+                                    <constraint firstAttribute="width" constant="80" id="OJH-Qt-oRo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KQ3-7i-2f2">
+                                <rect key="frame" x="127.5" y="368.5" width="120.5" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can still get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUE-Xm-j3q" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kac-zr-Ob8" customClass="SimpleLabel" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="36.5" y="20.5" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxc-fb-TOP" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="36.5" y="41" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wzj-rZ-Lsz" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="37K-z0-Zo7"/>
+                            <constraint firstItem="wzj-rZ-Lsz" firstAttribute="top" secondItem="6Vq-rl-Jnb" secondAttribute="bottom" constant="22" id="69b-We-OZZ"/>
+                            <constraint firstItem="2zF-8a-wOS" firstAttribute="top" secondItem="4Gh-Hp-lb0" secondAttribute="bottom" constant="25" id="6Aa-r6-TuA"/>
+                            <constraint firstItem="6Vq-rl-Jnb" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="8tV-Bn-iSv"/>
+                            <constraint firstItem="4Gh-Hp-lb0" firstAttribute="top" secondItem="KQ3-7i-2f2" secondAttribute="bottom" constant="17.5" id="Csi-1J-Jdx"/>
+                            <constraint firstItem="2zF-8a-wOS" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="Ctn-AV-cWe"/>
+                            <constraint firstItem="AAU-9s-4LK" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="JkW-7U-Qq6"/>
+                            <constraint firstItem="eGj-7h-QhY" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="PD4-1c-0OO"/>
+                            <constraint firstItem="6Vq-rl-Jnb" firstAttribute="top" secondItem="AAU-9s-4LK" secondAttribute="bottom" constant="8" id="RZu-mC-Hzf"/>
+                            <constraint firstItem="D5P-sH-8Pg" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="YhZ-4c-SIX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D5P-sH-8Pg" secondAttribute="trailing" constant="25" id="awS-ch-333"/>
+                            <constraint firstItem="4Gh-Hp-lb0" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="fNz-Xx-2uu"/>
+                            <constraint firstItem="D5P-sH-8Pg" firstAttribute="top" secondItem="wzj-rZ-Lsz" secondAttribute="bottom" constant="20" id="mrx-6S-yUO"/>
+                            <constraint firstItem="eGj-7h-QhY" firstAttribute="top" secondItem="2zF-8a-wOS" secondAttribute="bottom" constant="8" id="s9b-OO-8oV"/>
+                            <constraint firstItem="r2I-mk-Ba2" firstAttribute="top" secondItem="eGj-7h-QhY" secondAttribute="bottom" constant="20" id="uOb-BA-Smm"/>
+                            <constraint firstItem="KQ3-7i-2f2" firstAttribute="centerX" secondItem="k2d-Lu-pW4" secondAttribute="centerX" id="unK-7M-VjI"/>
+                            <constraint firstItem="AAU-9s-4LK" firstAttribute="top" secondItem="Lrf-15-gW2" secondAttribute="bottom" constant="1" id="zbA-Xg-kGc"/>
+                            <constraint firstItem="D5P-sH-8Pg" firstAttribute="leading" secondItem="k2d-Lu-pW4" secondAttribute="leadingMargin" constant="25" id="zkv-BO-8Sn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="letterCollection" destination="D5P-sH-8Pg" id="aVo-qj-K8D"/>
+                        <outlet property="pointsLbl" destination="kac-zr-Ob8" id="Bdi-c8-AmV"/>
+                        <outlet property="time" destination="6Vq-rl-Jnb" id="KRy-az-dgg"/>
+                        <segue destination="cti-Py-Y0Z" kind="show" identifier="GameResult" id="ZmP-Tu-t84"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdD-i9-eTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639.1999999999998" y="1.3493253373313345"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="ixH-cR-SEo">
+            <objects>
+                <viewController id="cti-Py-Y0Z" customClass="ResultsVC" customModule="Lettercheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGb-qu-EYK"/>
+                        <viewControllerLayoutGuide type="bottom" id="idk-dr-NbP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDh-2M-oVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxj-4K-7kh" customClass="LoadingCircle" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="67" y="100" width="240" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="msO-bz-iXw">
+                                        <rect key="frame" x="99" y="89.5" width="42" height="61.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-j4-QPr" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-bY-auH" customClass="SimpleLabel" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20.5" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVW-it-E6P" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="41" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="976-FV-sQR"/>
+                                    <constraint firstAttribute="width" constant="240" id="Um5-iz-cRH"/>
+                                    <constraint firstItem="msO-bz-iXw" firstAttribute="centerX" secondItem="gxj-4K-7kh" secondAttribute="centerX" id="YFp-lJ-3Vo"/>
+                                    <constraint firstItem="msO-bz-iXw" firstAttribute="centerY" secondItem="gxj-4K-7kh" secondAttribute="centerY" id="flS-jZ-07R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0A-Go-VwT" customClass="SimpleLabelSmall" customModule="Lettercheck" customModuleProvider="target">
+                                <rect key="frame" x="95" y="345" width="185.5" height="41"/>
+                                <string key="text">Synching your progress 
+with the server.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Lhi-gU-YMg">
+                                <rect key="frame" x="164" y="503" width="46" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7q-lP-xqn" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectedActionWithSender:" destination="cti-Py-Y0Z" eventType="touchUpInside" id="ibZ-Lv-kjR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG0-Bj-iqd" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="37" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectedActionWithSender:" destination="cti-Py-Y0Z" eventType="touchUpInside" id="vtf-50-8uX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu2-Ha-7cE" customClass="MainButton" customModule="Lettercheck" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectedActionWithSender:" destination="cti-Py-Y0Z" eventType="touchUpInside" id="eSL-i3-uqC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lhi-gU-YMg" firstAttribute="centerX" secondItem="tDh-2M-oVJ" secondAttribute="centerX" id="1l6-Vk-6O4"/>
+                            <constraint firstItem="gxj-4K-7kh" firstAttribute="top" secondItem="SGb-qu-EYK" secondAttribute="bottom" constant="80" id="89Q-Qt-gLv"/>
+                            <constraint firstItem="gxj-4K-7kh" firstAttribute="centerX" secondItem="tDh-2M-oVJ" secondAttribute="centerX" id="N91-sl-fLR"/>
+                            <constraint firstItem="idk-dr-NbP" firstAttribute="top" secondItem="Lhi-gU-YMg" secondAttribute="bottom" constant="60" id="NGw-48-egr"/>
+                            <constraint firstItem="e0A-Go-VwT" firstAttribute="centerX" secondItem="tDh-2M-oVJ" secondAttribute="centerX" id="Xz1-x1-tBz"/>
+                            <constraint firstItem="e0A-Go-VwT" firstAttribute="top" secondItem="gxj-4K-7kh" secondAttribute="bottom" constant="5" id="fyX-SQ-4Tb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circelProgress" destination="gxj-4K-7kh" id="z4m-M1-8ns"/>
+                        <outlet property="scoreLbl" destination="ktP-bY-auH" id="IxG-0b-LmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tva-mo-yiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3404" y="0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>
