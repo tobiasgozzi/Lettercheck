@@ -12,12 +12,25 @@ class Player {
     
     let name: String!
     let id: String!
-    let highscore: Int!
+    var highscore: Int! {
+        didSet {
+            level = gamesWithoutError / 5
+        }
+    }
+    var gamesWithoutError: Int!
     
-    init(user name: String, withID id: String, highscore points: Int) {
+    var level: Int!
+    
+    init(user name: String, withID id: String, highscore points: Int, gamesWithoutError: Int) {
         self.name = name
         self.id = id
         self.highscore = points
+        self.gamesWithoutError = gamesWithoutError
+    }
+    
+    func setLvl() {
+        gamesWithoutError = highscore / 5
     }
 
 }
+

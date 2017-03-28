@@ -34,6 +34,9 @@
 		1DDD18101E4BB6CF006C3940 /* SimpleLabelSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD180F1E4BB6CF006C3940 /* SimpleLabelSmall.swift */; };
 		1DDD18121E4BC9E7006C3940 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD18111E4BC9E7006C3940 /* ResultsVC.swift */; };
 		1DDD18141E4BCA34006C3940 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD18131E4BCA34006C3940 /* LoadingCircle.swift */; };
+		1DF1ABAA1E8AFF25002CFEF8 /* WordToGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1ABA91E8AFF25002CFEF8 /* WordToGuess.swift */; };
+		1DF1ABAC1E8B0070002CFEF8 /* Hints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1ABAB1E8B0070002CFEF8 /* Hints.swift */; };
+		1DF1ABAE1E8B0116002CFEF8 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1ABAD1E8B0116002CFEF8 /* Categories.swift */; };
 		1DF2BD0A1DE366D60020F63C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF2BD081DE366D60020F63C /* LoginVC.swift */; };
 		3172E0D1B717CC8A30C65F16 /* Pods_Lettercheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6E2B4928DD5E2D7F133AC3 /* Pods_Lettercheck.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,9 @@
 		1DDD180F1E4BB6CF006C3940 /* SimpleLabelSmall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLabelSmall.swift; sourceTree = "<group>"; };
 		1DDD18111E4BC9E7006C3940 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		1DDD18131E4BCA34006C3940 /* LoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingCircle.swift; path = Lettercheck/LoadingCircle.swift; sourceTree = "<group>"; };
+		1DF1ABA91E8AFF25002CFEF8 /* WordToGuess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordToGuess.swift; sourceTree = "<group>"; };
+		1DF1ABAB1E8B0070002CFEF8 /* Hints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hints.swift; sourceTree = "<group>"; };
+		1DF1ABAD1E8B0116002CFEF8 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		1DF2BD081DE366D60020F63C /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7F6E2B4928DD5E2D7F133AC3 /* Pods_Lettercheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lettercheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA926E1A802F68754BC1B1ED /* Pods-Lettercheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lettercheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lettercheck/Pods-Lettercheck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				1DC68E271DECB9BC001F8F8B /* Player.swift */,
+				1DF1ABA91E8AFF25002CFEF8 /* WordToGuess.swift */,
+				1DF1ABAB1E8B0070002CFEF8 /* Hints.swift */,
+				1DF1ABAD1E8B0116002CFEF8 /* Categories.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -333,16 +342,19 @@
 				1DDD18121E4BC9E7006C3940 /* ResultsVC.swift in Sources */,
 				1D2EA60C1DDCF79600B96539 /* AppDelegate.swift in Sources */,
 				1D25B0E21DE3782900A5CFDA /* LCLabel.swift in Sources */,
+				1DF1ABAA1E8AFF25002CFEF8 /* WordToGuess.swift in Sources */,
 				1DF2BD0A1DE366D60020F63C /* LoginVC.swift in Sources */,
 				1D25B0DE1DE3750800A5CFDA /* MainButton.swift in Sources */,
 				1D31F2571E2568E000623730 /* GameVC.swift in Sources */,
 				1D6A7F061E0B1BFB00A7BB04 /* RedDot.swift in Sources */,
+				1DF1ABAC1E8B0070002CFEF8 /* Hints.swift in Sources */,
 				1D2BDD431E2EA1940038B5CD /* LetterCell.swift in Sources */,
 				1D0E97C71DFF383F0088AC27 /* CategoriesVC.swift in Sources */,
 				1D5407661E3A98CE004D2A18 /* LetterButton.swift in Sources */,
 				1D3B6D561DF0B958002AB2FD /* MainVC.swift in Sources */,
 				1D5407641E3A9714004D2A18 /* SimpleLabel.swift in Sources */,
 				1DC68E281DECB9BC001F8F8B /* Player.swift in Sources */,
+				1DF1ABAE1E8B0116002CFEF8 /* Categories.swift in Sources */,
 				1D25B0E01DE375E300A5CFDA /* Extensions.swift in Sources */,
 				1D5740041DECA2D900609083 /* DataService.swift in Sources */,
 				1DC68E2B1DECBFA3001F8F8B /* Constants.swift in Sources */,

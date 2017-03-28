@@ -141,7 +141,7 @@ class LoginVC: UIViewController {
     func createPlayerID(id : String, from provider: String) {
         let userID = String(Date().timeIntervalSince1970)
         
-        //Player(user: userID, withID: id , highscore: 0)
+        Player(user: userID, withID: id , highscore: 0, gamesWithoutError: 4)
         
         UserDefaults.standard.setValue(id, forKey: KEY_UID)
         
