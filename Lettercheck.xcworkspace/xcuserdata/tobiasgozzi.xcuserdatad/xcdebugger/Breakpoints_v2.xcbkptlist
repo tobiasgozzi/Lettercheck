@@ -10,23 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926253.960697"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "fblogin()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926258.258261"
+            timestampString = "513505475.412275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
@@ -42,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926269.634626"
+            timestampString = "513505475.412275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "fblogin()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,91 +42,171 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926286.119552"
+            timestampString = "513505475.412275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "emailSignIn()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926288.570735"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "emailSignIn()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926340.641357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "fblogin()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Lettercheck/LoginVC.swift"
-            timestampString = "507926354.277082"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "fblogin()"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Lettercheck.LoginVC.fblogin () -&gt; ()"
+                  symbolName = "Lettercheck.LoginVC.(emailSignIn () -&gt; ()).(closure #1)"
                   moduleName = "Lettercheck"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tobiasgozzi/Desktop/Desktop%20-%20Tobias%E2%80%99s%20MacBook%20Air/Ios%20Projects/Lettercheck/Lettercheck/LoginVC.swift"
-                  timestampString = "509463727.878951"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.438797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "1525">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Lettercheck.LoginVC.(fblogin () -&gt; ()).(closure #1)"
+                  symbolName = "Lettercheck.LoginVC.(emailSignIn () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "Lettercheck"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tobiasgozzi/Desktop/Desktop%20-%20Tobias%E2%80%99s%20MacBook%20Air/Ios%20Projects/Lettercheck/Lettercheck/LoginVC.swift"
-                  timestampString = "509463727.88288"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.441878"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "2418">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/LoginVC.swift"
+            timestampString = "513505475.412275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "LoginVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/LoginVC.swift"
+            timestampString = "513505475.412275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "LoginVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/LoginVC.swift"
+            timestampString = "513505475.412275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "emailSignIn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.LoginVC.(emailSignIn () -&gt; ()).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.461588"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "1525">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.LoginVC.(emailSignIn () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.465219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "2418">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/LoginVC.swift"
+            timestampString = "513505475.412275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "emailSignIn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.LoginVC.emailSignIn () -&gt; ()"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.471976"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "2094">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.LoginVC.(emailSignIn () -&gt; ()).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/LoginVC.swift"
+                  timestampString = "513272386.475987"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1697">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -209,6 +273,214 @@
             endingLineNumber = "111"
             landmarkName = "progressCircle()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/LoginVC.swift"
+            timestampString = "513505475.412275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "fblogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.fetchGameData () -&gt; ()"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.493753"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "338">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.(fetchGameData () -&gt; ()).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.496799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1023">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.(fetchGameData () -&gt; ()).(closure #2)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.503464"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.(fetchGameData () -&gt; ()).(closure #2)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.506613"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "618">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lettercheck/CheckForUpdatesVC.swift"
+            timestampString = "513500343.668121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "fetchGameData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.(fetchGameData () -&gt; ()).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.524314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "573">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lettercheck.CheckForUpdatesVC.(fetchGameData () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Lettercheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasgozzi/Dropbox/Lettercheck/Lettercheck/Lettercheck/CheckForUpdatesVC.swift"
+                  timestampString = "513272386.527543"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

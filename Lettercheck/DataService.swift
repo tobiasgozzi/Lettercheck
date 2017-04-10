@@ -16,12 +16,16 @@ class DataService {
     
     static let ds = DataService()
     
+    let DB_VERSION_DATA = FIRDatabase.database().reference().child("Version")
+    
     let FIRPATH: FIRDatabaseReference =  FIRDatabase.database().reference()
     let FIRUSERS: FIRDatabaseReference = FIRDatabase.database().reference().child("USERS")
 
     //category paths
     
     let CATEGORIES: FIRDatabaseReference = FIRDatabase.database().reference().child("categories")
+    let WORDS: FIRDatabaseReference = FIRDatabase.database().reference().child("WORDS")
+    let HINTS: FIRDatabaseReference = FIRDatabase.database().reference().child("HINTS")
     
     
     var CURRENT_USER: FIRDatabaseReference {

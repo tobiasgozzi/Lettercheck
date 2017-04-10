@@ -96,6 +96,8 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 //        }
 //    }
     
+    
+    //is deprecated with new "offline" logic, fetch data from device 
     func fetchCategories() {
         let content = DataService.ds.CATEGORIES
         
@@ -120,6 +122,10 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 
         
     }
+
+    
+
+    
     func cellSelected(){
         print("cell selected")
     }

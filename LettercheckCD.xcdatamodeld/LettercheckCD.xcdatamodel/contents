@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Hint" representedClassName="Hint" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="multilangHints" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="LCCategory" representedClassName="LCCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="WordToGuess" representedClassName="WordToGuess" syncable="YES" codeGenerationType="class">
+        <attribute name="forCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="multilangWord" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LCCategory" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="WordToGuess" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="Hint" positionX="-36" positionY="36" width="128" height="90"/>
+    </elements>
+</model>

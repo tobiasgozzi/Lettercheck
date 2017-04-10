@@ -15,6 +15,13 @@ import FBSDKCoreKit
 
 class LoginVC: UIViewController {
     
+    
+    //test data
+//    let category: [LCCategory] = [ LCCategory(withNames: ["History","Geschichte"], id: "History"), LCCategory(withNames: ["Sports","Sport"], id: "Sports") ]
+//    let historyWords: [WordToGuess] = [WordToGuess(words: ["Napoleon","Napoleon"], withId: "Napoleon"), WordToGuess(words: ["Waterloo","Waterloo"], withId: "Waterloo")]
+//    let sportWords: [WordToGuess] = [WordToGuess(words: ["Hockey","Hockey"], withId: "Hockey"), WordToGuess(words: ["Soccer","Soccer"], withId: "Soccer")]
+    
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginButton: MainButton!
@@ -123,7 +130,7 @@ class LoginVC: UIViewController {
                                 self.createPlayerID(id: userData.uid, from: userData.providerID)
                                 self.saveLoginData(uid: userData.uid)
                             }
-                            self.performSegue(withIdentifier: "toMain", sender: nil)
+                            self.performSegue(withIdentifier: "toCheckForUpdates", sender: nil)
                         }
                         
                     }
@@ -174,8 +181,10 @@ class LoginVC: UIViewController {
     
     //for building purpose
     deinit {
-        print("view deinitialized")
+        print("login view deinitialized")
     }
+    
+    
     
     
     
@@ -190,7 +199,7 @@ class LoginVC: UIViewController {
     func loadLoginData(){
         
         if let userCredential = UserDefaults.standard.value(forKey: "uid") as? String {
-            performSegue(withIdentifier: "toMain", sender: nil)
+            performSegue(withIdentifier: "toCheckForUpdates", sender: nil)
 
         }
         

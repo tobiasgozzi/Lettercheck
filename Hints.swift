@@ -8,10 +8,20 @@
 
 import Foundation
 
-enum Hints {
- 
-    case hintOne([String])
-    case hintTwo([String])
-    case hintThree([String])
+struct Hints {
+
+
+    let forWordId: String
+    let hintsMulitlang: [[String]]
+    let fromCategory: String
     
+    init(word: String, hints: [[String]], category: String) {
+        
+        self.forWordId = word
+        self.hintsMulitlang = hints
+        self.fromCategory = category
+        
+    }
+
 }
+

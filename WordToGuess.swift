@@ -10,12 +10,15 @@ import Foundation
 
 class WordToGuess {
     
-    let word: [String]
+    //word and it's translations
+    let multilangWord: [String]
     let id: String
+    let categoryId: String
     
-    init(words: [String], withId: String) {
-        word = words
-        id = withId
+    init(words: [String], withId: String, from category: String) {
+        self.multilangWord = words
+        self.id = withId
+        self.categoryId = category
     }
     
 }
